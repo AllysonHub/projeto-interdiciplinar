@@ -32,6 +32,7 @@ body {
   height: 100%;
   font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: #100028;
 }
 
 h1,
@@ -72,7 +73,7 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
   color: #adadad;
   font-weight: 400;
@@ -110,6 +111,10 @@ ol {
 .section-title {
   margin-bottom: 50px;
 }
+.section-titleD {
+  margin-bottom: 50px;
+  width: 80%;
+}
 .section-title.center-title {
   text-align: center;
 }
@@ -125,7 +130,7 @@ ol {
   text-transform: uppercase;
   margin-bottom: 6px;
 }
-.section-title h2 {
+.section-title h2,.section-titleD h2 {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
@@ -141,6 +146,8 @@ ol {
   background: #00bfe7;
   content: "";
 }
+
+
 
 .set-bg {
   background-repeat: no-repeat;
@@ -617,13 +624,23 @@ ol {
 -----------------------*/
 .counter {
   background: #100028;
-  height: 840px;
-  padding-top: 380px;
+  height: 840px; 
   overflow: hidden;
+  margin: auto;
+  width: max-content;
+  
 }
+
+.counter2{background: #100028;
+height: 820px; 
+overflow: hidden;
+margin: auto;
+width: max-content;
+padding-top: 20%;}
 
 .counter__content {
   padding: 0px 50px;
+  text-align: center;
 }
 
 .counter__item {
@@ -793,8 +810,9 @@ ol {
 }
 .blog__item.latest__item:hover {
   border: 1px solid #222222 !important;
-  background: url(../img/blog/blog-1.jpg);
+  background: url(../img/blog/agencia_fapesp_depressao.png);
   background-size: cover;
+ 
 }
 
 .latest__slider.owl-carousel .owl-item .col-lg-4 {
@@ -1060,6 +1078,10 @@ ol {
   padding-bottom: 60px;
 }
 
+.col-lg-4D{
+  margin-bottom: 5%;
+}
+
 .testimonial__slider.owl-carousel .owl-item .col-lg-4 {
   max-width: 100%;
 }
@@ -1139,13 +1161,62 @@ ol {
   margin-bottom: 45px;
 }
 
+.col-lg-6{
+  
+  
+}
+
+
+.col-lg-61{
+  display: flex; 
+  justify-content: space-around;
+  width: fit-content;
+}
+
+
+h4{
+  margin-left: 6%;
+}
+
+
+
 .services__item {
   margin-bottom: 45px;
+ 
+  display: flex;
+
+ ;
 }
+
+
+
+.services__item__icon1:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00bfe7;
+  content: "";
+  -webkit-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
 .services__item:hover .services__item__icon:after {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
+
+      
+}
+
+.services__item:hover .services__item__icon1:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+
+      
 }
 .services__item h4 {
   color: #ffffff;
@@ -1157,6 +1228,18 @@ ol {
 .services__item p {
   margin-bottom: 0;
 }
+
+.services__item__icon1 {
+  position: relative;
+width: 70px;
+height: 70px;
+  line-height: 70px;
+  text-align: center;
+  margin-right: 6%;
+  padding: auto;
+}
+
+
 
 .services__item__icon {
   position: relative;
@@ -1177,7 +1260,19 @@ ol {
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
 }
-
+.services__item__icon1:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: auto;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00bfe7;
+  content: "";
+  -webkit-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
 /*---------------------
   Services Page
 -----------------------*/
@@ -1232,6 +1327,9 @@ ol {
 .portfolio__item:hover .portfolio__item__text h4:after {
   opacity: 1;
 }
+
+
+
 
 .portfolio__item__video {
   height: 240px;
@@ -1785,7 +1883,7 @@ ol {
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 @media only screen and (min-width: 1200px) {
-  .container {
+  .container ,.containerc{
     max-width: 1170px;
   }
 }
@@ -2062,7 +2160,7 @@ ol {
     background: #00bfe7;
   }
 
-  .header .container {
+  .header .container,.containerc {
     position: relative;
   }
 
@@ -2169,3 +2267,23 @@ ol {
     padding: 30px 40px 35px 35px;
   }
 }
+
+.h1title{
+  top: 0;
+  margin-bottom: 30%;
+  text-align: center;
+
+}
+
+.containerc{
+  position: static;
+  text-align: center;
+
+}
+
+
+
+.col-lg-6 col-md-6 col-sm-6{
+  width: 100%;
+
+}                    
